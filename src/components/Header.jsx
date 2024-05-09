@@ -19,32 +19,32 @@ const Header = () => {
                   <h1 className=" p-2 btn px-4 w-fit rounded font-semibold">
                     POWER
                   </h1>
-                  <h1 className="text-2xl font-bold">{record.power} hp</h1>
+                  <h1 className="text-2xl font-bold" key={record.power}>{record.power} hp</h1>
                 </div>
                 <div className="flex flex-col gap-4">
                   <h1 className=" p-2 btn px-4 w-fit rounded font-semibold">
                     TORQUE
                   </h1>
-                  <h1 className="text-2xl font-bold">{record.torque} N-m</h1>
+                  <h1 className="text-2xl font-bold" key={record.torque}>{record.torque} N-m</h1>
                 </div>
                 <div className="flex flex-col gap-4">
                   <h1 className=" p-2 btn px-4 w-fit rounded font-semibold">
                     BOOST
                   </h1>
-                  <h1 className="text-2xl font-bold">{record.boost}</h1>
+                  <h1 className="text-2xl font-bold" key={record.boost}>{record.boost}</h1>
                 </div>
               </div>
               <div className="border-line mt-4"></div>
               <div className="flex justify-between mt-4 ">
                 <div className="flex flex-col items-center">
                   <h1 className=" p-2 px-4 w-fit rounded font-semibold">RPM</h1>
-                  <h1 className="text-2xl font-bold">{record.rpm}</h1>
+                  <h1 className="text-2xl font-bold" key={record.rpm}>{record.rpm}</h1>
                 </div>
                 <div className="flex flex-col gap-2 items-center">
                   <h1 className=" p-2 btn px-4 w-fit rounded font-semibold">
                     E-BRAKE
                   </h1>
-                  <h1 className="text-2xl font-bold">{record.ebrake}%</h1>
+                  <h1 className="text-2xl font-bold" key={record.ebrake}>{record.ebrake}%</h1>
                 </div>
               </div>
               <div className="border-line mt-4"></div>
@@ -53,13 +53,13 @@ const Header = () => {
                   <h1 className=" p-2 btn px-4 w-fit rounded font-semibold">
                     GEAR
                   </h1>
-                  <h1 className="text-8xl font-bold">{record.gear}</h1>
+                  <h1 className="text-8xl font-bold" key={record.gear}>{record.gear}</h1>
                 </div>
                 <div className="flex flex-col gap-2 items-center">
                   <h1 className=" p-2 btn px-4 w-fit rounded font-semibold">
                     CLUTCH
                   </h1>
-                  <h1 className="text-2xl font-bold">{record.clutch}%</h1>
+                  <h1 className="text-2xl font-bold" key={record.clutch}>{record.clutch}%</h1>
                 </div>
               </div>
               <div className="border-line mt-4"></div>
@@ -74,7 +74,7 @@ const Header = () => {
               <h1 className=" p-2 btn px-4 w-fit rounded font-semibold">
                 CLUTCH
               </h1>
-              <h1 className="text-2xl font-bold">{record.clutch}%</h1>
+              <h1 className="text-2xl font-bold" key={record.clutch}>{record.clutch}%</h1>
             </div>
             <div className="border-line mt-4"></div>
             <div className="flex justify-between mt-4 ">
@@ -82,13 +82,13 @@ const Header = () => {
                 <h1 className=" p-2 px-4 w-fit rounded font-semibold">
                   THROTTLE
                 </h1>
-                <h1 className="text-2xl font-bold">{record.throttle}%</h1>
+                <h1 className="text-2xl font-bold"key={record.throttle}>{record.throttle}%</h1>
               </div>
               <div className="flex flex-col gap-2 items-center">
                 <h1 className=" p-2 btn px-4 w-fit rounded font-semibold">
                   BRAKE
                 </h1>
-                <h1 className="text-2xl font-bold">{record.brake}%</h1>
+                <h1 className="text-2xl font-bold" key={record.brake}>{record.brake}%</h1>
               </div>
             </div>
             <div className="border-line mt-4"></div>
