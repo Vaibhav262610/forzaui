@@ -7,7 +7,7 @@ const Header = () => {
     {
       DATA.map((record) => {
         return(
-          <div className="responsive text-white h-screen backdrop-blur-sm">
+          <div key={record} className="responsive text-white h-screen backdrop-blur-sm">
           <div className="boxes w-96 flex flex-col gap-4">
             <div className="flex rounded justify-center text-black bg-white py-2 font-bold">
               <h1>GENERAL</h1>
